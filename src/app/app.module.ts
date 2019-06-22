@@ -8,6 +8,7 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,6 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    /*este modulo permite realizar peticiones put,delete,get,post */
+    HttpClientModule,
     AppRoutingModule/*cuando se crea un modulo siempre va cargado a los import */
   ],
   providers: [],
